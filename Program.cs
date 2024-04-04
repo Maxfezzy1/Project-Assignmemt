@@ -32,9 +32,9 @@
             Console.WriteLine("Invalid input.Please enter a valid numeric value for fahrenheit.");
             goto Start1;
         }
-        static double CelsiusFahrenheit1(double fahrenheit)
+        static double CelsiusFahrenheit1(double fahrenheit1)
         {
-            return (fahrenheit - 32) * 5 / 9;
+            return (fahrenheit1 - 32) * 5 / 9;
         }
 
 
@@ -76,7 +76,7 @@
            
         }
 
-
+        Decide1:
         Console.WriteLine("Do you wish to convert from fahrenheit to Celsius, Yes or No");
         var Userdecision2 = Console.ReadLine();
         switch (Userdecision2.ToUpper())
@@ -87,7 +87,7 @@
                 goto End;
             default:
                 Console.WriteLine("Your Choice {0} is invalid.... Please try again", Userdecision2);
-                goto Decide;
+                goto Decide1;
         }
 
         End:
